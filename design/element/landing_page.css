@@ -31,39 +31,73 @@ html, body { overflow-x: hidden; }
 
 /* navigation section  */
 
-nav{
-   border-bottom:2px solid #9d5248 ;
-    position: fixed ;
-    width: 100%;
-    background-color: white;
+.img-box{
+  justify-self: center;
+  margin-top: 2rem ;
+}
+
+.logo{
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
 
 }
 
-.logo-img{
-  width: 8rem;
-  height: 3rem;
-  object-fit: cover;
-  display: block;
-  margin: 0 0 2rem 4rem;
+
+/* navigation bar section */
+.navigation-bar{
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 20rem;
+padding: 1rem 0;
+color: brown;
+justify-content: center;
+width: auto;
 }
-.nav-link{
+
+.nav1{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-weight: 100;
+  font-size: 0.9rem;
+  
+}
+
+.nav2{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-weight: 100;
+  font-size: 0.9rem;
+ 
+}
+
+.nav3{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.search-nav{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.nav2-link{
   text-decoration: none;
   color: black;
 }
 
-.nav-box{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 2rem 4rem 0 0;
-  
- 
+.nav2-link:first-child{
+  color: brown;
 }
-
-.links{
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+.nav2-link:nth-child(2){
+  color: brown;
 }
 
 
@@ -73,6 +107,9 @@ nav{
       height: 80vh; 
       overflow: hidden;
       margin: 0 50px;
+      justify-self: center;
+      width: 90%;
+      
     }
 
     /* Background Video Style */
