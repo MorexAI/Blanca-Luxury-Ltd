@@ -1,0 +1,102 @@
+@media (max-width: 1200px) {
+  .navigation-bar { gap: 6rem; padding: 0.5rem 0; }
+  .hero-section { margin: 0 20px; }
+  .gallery-container { width: 100%; left: 0; padding-left: 0; height: 60rem; }
+}
+
+@media (max-width: 992px) {
+  .navigation-bar { gap: 3rem; flex-wrap: wrap; justify-content: center; }
+  .nav2 { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+  .nav-section { gap: 4rem; width: 100%; }
+  .hero-section { height: 60vh; }
+  .gift-guide_section { margin-bottom: 60px; }
+  .catalog_sculptures_box, .catalog_men_box { flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .catalog-sculptures img, .catalog-men img { width: 45vw; height: auto; }
+  .flexed-img { flex-direction: column; align-items: center; gap: 20px; }
+  .sub-img { width: 90vw; height: auto; }
+  .looks { flex-direction: column; min-height: auto; }
+  .ss-looks { display: none; }
+  .gallery-container { width: 100%; height: auto; padding-top: 40px; left: 0; padding-left: 0; }
+  .gallery-track { gap: 24px; }
+  .slide { flex: 0 0 260px; height: 300px; scroll-snap-align: center; }
+  .arrow.left { left: 10px; }
+  .arrow.right { left: auto; right: 10px; }
+  .gallery-container-symbol { left: 0; bottom: 0; font-size: 28px; }
+
+  /* section-6 stack and sizing */
+  .section-6 { flex-direction: column; align-items: center; gap: 24px; }
+  .s61 { width: 100%; }
+  .s61-cc { padding-top: 40px; }
+  .s6-img { width: 80vw; height: auto; margin-bottom: 24px; }
+  .s6-t2 { width: 90%; }
+  .s6-img2 { width: 90vw; height: auto; }
+
+  .s7-img { width: 70vw; height: auto; }
+  .s7-idb { width: 60%; }
+
+  .ayt-flexbox { flex-direction: column; gap: 2rem; }
+  .s8-content-box { width: 100%; }
+  .s8-img { width: 60vw; height: auto; }
+
+  /* section-9 one card per view */
+  .gallery-trace > div { flex: 0 0 90vw; }
+  .arrows { width: 40px; height: 40px; font-size: 20px; }
+  .arrows.left { left: 8px; }
+  .arrows.right { right: 8px; }
+}
+
+@media (max-width: 768px) {
+  .navigation-bar { gap: 2rem; }
+  .nav1, .nav2, .nav3 { justify-content: center; }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 1rem; }
+  .cta-button { font-size: 0.9rem; padding: 8px 16px; }
+  .catalog-sculptures img, .catalog-men img { width: 90vw; height: auto; }
+  .gallery-track { gap: 16px; }
+  .slide { flex: 0 0 70vw; height: 280px; }
+  .looks-title { font-size: 1.4rem; margin-bottom: 60px; }
+
+  /* section-6 tighter mobile sizing */
+  .s6-img { width: 92vw; }
+  .s6-img2 { width: 92vw; }
+  .s6-t1 { font-size: 1.3rem; }
+  .s6-t2 { font-size: 1rem; line-height: 1.4rem; }
+
+  .s7-img { width: 90vw; height: auto; }
+  .s7-idb { width: 85%; }
+
+  .ayt-flexbox { flex-direction: column; gap: 1.5rem; }
+  .s8-img { width: 85vw; height: auto; }
+
+  /* section-9 tighter */
+  .gallery-trace > div { flex: 0 0 92vw; }
+  .arrows { width: 38px; height: 38px; font-size: 18px; }
+  .arrows.left { left: 8px; }
+  .arrows.right { right: 8px; }
+}
+
+@media (max-width: 576px) {
+  .navigation-bar { gap: 1rem; padding: 0.5rem 0; }
+  .nav-section { gap: 1rem; width: 100%; padding: 0.5rem 0; }
+  .hero-section { height: 50vh; margin: 0 10px; }
+  .gallery-container { padding-top: 24px; }
+  .slide { flex: 0 0 78vw; height: 240px; }
+  .arrow.left { left: 8px; }
+  .arrow.right { right: 8px; }
+
+  /* section-6 small phones */
+  .s61-cc { padding-top: 24px; }
+  .s6-img { width: 95vw; }
+  .s6-img2 { width: 95vw; }
+
+  .s7-idb { width: 92vw; }
+
+  .ayt-flexbox { flex-direction: column; gap: 1rem; }
+  .s8-img { width: 92vw; height: auto; }
+
+  /* section-9 small phones */
+  .gallery-trace > div { flex: 0 0 95vw; }
+  .arrows { width: 36px; height: 36px; font-size: 18px; }
+  .arrows.left { left: 8px; }
+  .arrows.right { right: 8px; }
+}

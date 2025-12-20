@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landing_page.css">
+    <link rel="stylesheet" href="rensponsiveness-index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
     <!-- GOOGLE FONTS BELLEZA FONT FAMIY -->
@@ -537,6 +538,41 @@
                 <div class="arrows right"><i class="fa-solid fa-chevron-right"></i></div>
             </div>
     </section>
+    <script>
+      (function(){
+        const s9 = document.querySelector('.section-9');
+        if(!s9) return;
+        const track = s9.querySelector('#galleryTrack2');
+        const cards = track ? Array.from(track.children) : [];
+        const left = s9.querySelector('.arrows.left');
+        const right = s9.querySelector('.arrows.right');
+        if(!track || cards.length === 0 || !left || !right) return;
+
+        function centerCard(idx){
+          const el = cards[idx];
+          if(!el) return;
+          const target = el.offsetLeft - (track.clientWidth - el.offsetWidth)/2;
+          track.scrollTo({ left: target, behavior: 'smooth' });
+        }
+
+        function nearest(){
+          const center = track.scrollLeft + track.clientWidth/2;
+          let best = 0, dist = Infinity;
+          for(let i=0;i<cards.length;i++){
+            const c = cards[i].offsetLeft + cards[i].offsetWidth/2;
+            const d = Math.abs(c - center);
+            if(d < dist){ dist = d; best = i; }
+          }
+          return best;
+        }
+
+        function goLeft(){ const i = nearest(); const next = (i - 1 + cards.length) % cards.length; centerCard(next); }
+        function goRight(){ const i = nearest(); const next = (i + 1) % cards.length; centerCard(next); }
+
+        left.addEventListener('click', function(e){ e.preventDefault(); goLeft(); });
+        right.addEventListener('click', function(e){ e.preventDefault(); goRight(); });
+      })();
+    </script>
 
 
 
