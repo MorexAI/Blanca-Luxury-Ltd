@@ -1,0 +1,105 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  
+}
+
+body{
+  /* overflow: hidden; */
+}
+
+
+/* html, body { overflow-x: hidden; } */
+
+    /* FONTS */
+    .belleza-regular {
+      font-family: "Belleza", sans-serif;
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    .marcellus-regular {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.smooch-sans{
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.img-box{
+  justify-self: center;
+  margin-top: 2rem ;
+}
+
+.logo{
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
+
+}
+
+
+/* navigation bar section */
+.navigation-bar{
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 15rem;
+padding: 1rem 0;
+color: brown;
+justify-content: center;
+width: auto;
+}
+
+.nav1{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-weight: 100;
+  font-size: 0.9rem;
+  
+}
+
+.nav2{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-weight: 100;
+  font-size: 0.9rem;
+ 
+}
+
+.nav3{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.search-nav{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.nav2-link{
+  text-decoration: none;
+  color: black;
+}
+
+.nav2-link:first-child{
+  color: brown;
+}
+.nav2-link:nth-child(2){
+  color: brown;
+}
