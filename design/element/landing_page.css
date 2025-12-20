@@ -29,6 +29,44 @@ html, body { overflow-x: hidden; }
 }
 
 
+/* navigation section  */
+
+nav{
+   border-bottom:2px solid #9d5248 ;
+    position: fixed ;
+    width: 100%;
+    background-color: white;
+
+}
+
+.logo-img{
+  width: 8rem;
+  height: 3rem;
+  object-fit: cover;
+  display: block;
+  margin: 0 0 2rem 4rem;
+}
+.nav-link{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 4rem 0 0;
+  
+ 
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
 
  .hero-section {
       position: relative;
