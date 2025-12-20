@@ -83,6 +83,14 @@ justify-content: center;
  
 }
 
+.nav3{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
 .search-nav{
   text-decoration: none;
   color: black;
