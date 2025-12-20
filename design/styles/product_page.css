@@ -145,6 +145,16 @@ width: auto;
   width: 22rem;
   height: 30rem;
   object-fit: cover;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.first-product-image-container a {
+  display: inline-block;
+}
+
+.first-product-image-container a:hover .first-product-image {
+  transform: scale(1.06);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
 .fpi-text1{
@@ -159,4 +169,34 @@ width: auto;
   color: brown;
   margin-bottom: 10rem;
 
+}
+
+
+
+
+.section-image{
+  width: 40rem;
+  height: 60rem;
+  object-fit: cover;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  
+}
+.section-image-box{
+  justify-self: center;
+  margin-bottom: 3rem;
+}
+
+.section-image-box a { display: inline-block; }
+.section-image-box a:hover .section-image {
+  transform: scale(1.04);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+
+.cart{
+  justify-self: center;
+}
+
+.cart-button:hover{
+  cursor: pointer;
 }
