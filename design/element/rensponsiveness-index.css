@@ -2,6 +2,13 @@
   .navigation-bar { gap: 6rem; padding: 0.5rem 0; }
   .hero-section { margin: 0 20px; }
   .gallery-container { width: 100%; left: 0; padding-left: 0; height: 60rem; }
+  /* section-10 wider container */
+  .section-10 { width: 100%; }
+  .section-box { width: 95%; gap: 24px; }
+  .s-box-info { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .section-10 .s-box { display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
+  .section-10 .s-box-head { grid-column: 1; }
+  .section-10 .s-box-t { grid-column: 2; text-align: right; }
 }
 
 @media (max-width: 992px) {
@@ -43,6 +50,16 @@
   .arrows { width: 40px; height: 40px; font-size: 20px; }
   .arrows.left { left: 8px; }
   .arrows.right { right: 8px; }
+
+  /* section-10 layout: stack + 2-column grid */
+  .section-10 { width: 100%; }
+  .section-box { flex-direction: column; width: 95%; gap: 24px; }
+  .s-boxs { width: 100%; }
+  .s-box-info { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .s-box { width: 100%; }
+  .section-10 .s-box { display: grid; grid-template-columns: 1fr 1fr; }
+  .section-10 .s-box-head { grid-column: 1; }
+  .section-10 .s-box-t { grid-column: 2; text-align: right; }
 }
 
 @media (max-width: 768px) {
@@ -73,6 +90,15 @@
   .arrows { width: 38px; height: 38px; font-size: 18px; }
   .arrows.left { left: 8px; }
   .arrows.right { right: 8px; }
+
+  /* section-10: single column grid */
+  .section-box { width: 96%; }
+  .s-box-info { grid-template-columns: 1fr; gap: 16px; }
+  .s-boxs-head { font-size: 1.5rem; }
+  .s-box-head { font-size: 1.2rem; }
+  .s-box-ts { font-size: 0.95rem; }
+  .section-10 .s-box { display: block; }
+  .section-10 .s-box-head, .section-10 .s-box-t { grid-column: 1; text-align: left; }
 }
 
 @media (max-width: 576px) {
@@ -99,4 +125,13 @@
   .arrows { width: 36px; height: 36px; font-size: 18px; }
   .arrows.left { left: 8px; }
   .arrows.right { right: 8px; }
+
+  /* section-10: tighten spacing */
+  .section-box { width: 98%; gap: 16px; }
+  .s-box-info { grid-template-columns: 1fr; gap: 14px; }
+  .s-boxs-head { font-size: 1.4rem; }
+  .s-box-head { font-size: 1.1rem; }
+  .s-box-ts { font-size: 0.9rem; }
+  .section-10 .s-box { display: block; }
+  .section-10 .s-box-head, .section-10 .s-box-t { grid-column: 1; text-align: left; }
 }
