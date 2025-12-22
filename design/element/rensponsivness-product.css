@@ -31,6 +31,7 @@
   .first-product-image { width: 100%; height: auto; }
   .fpi-text1 { font-size: 1rem; }
   .fpi-text2 { font-size: 0.95rem; }
+  .fpi-text2::after { font-size: 1rem; }
 }
 
 @media (max-width: 576px) {
@@ -41,4 +42,18 @@
   .first-product-image-container { grid-template-columns: 1fr; gap: 14px; }
   .section-image { width: 100vw; height: 75vh; object-fit: cover; }
   .cart-button { width: 100%; }
+  .fpi-text2::after { font-size: 1.05rem; }
 }
+/* prices appended under second text */
+.fpi-text2::after {
+  content: "";
+  display: block;
+  margin-top: 4px;
+  color: brown;
+  font-weight: 400;
+}
+
+.first-product-image-container > div:nth-child(1) .fpi-text2::after { content: "£349"; }
+.first-product-image-container > div:nth-child(2) .fpi-text2::after { content: "£279"; }
+.first-product-image-container > div:nth-child(3) .fpi-text2::after { content: "£459"; }
+.first-product-image-container > div:nth-child(4) .fpi-text2::after { content: "£199"; }
