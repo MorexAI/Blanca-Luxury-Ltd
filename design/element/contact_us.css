@@ -105,6 +105,15 @@ width: auto;
 }
 
 
+/* contact us body */
+
+
+input::placeholder{
+  color: rgba(0, 0, 0, 0.438);
+ 
+}
+
+
 
 footer{
 
