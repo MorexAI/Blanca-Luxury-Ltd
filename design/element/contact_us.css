@@ -58,6 +58,7 @@ padding: 1rem 0;
 color: brown;
 justify-content: center;
 width: auto;
+margin-bottom: 3rem;
 }
 
 .nav1{
@@ -114,6 +115,235 @@ input::placeholder{
 }
 
 
+.contact-us-form{
+  margin-bottom: 2rem;
+}
+.contact-us-form-box{
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 9rem;
+  background-color:  rgba(0, 0, 0, 0.027);
+  width: 95%;
+  justify-content: center;
+  padding: 3rem 0;
+
+}
+
+
+.head{
+  font-size: 1.7rem;
+  font-weight: 100;
+  margin-bottom: 4rem;
+}
+
+.sub-head{
+  color: rgba(0, 0, 0, 0.438);
+  font-size: 17px;
+  width: 80%;
+  justify-self : center;
+  line-height: 1.3rem;
+    margin-bottom: 4rem;
+  
+
+}
+
+
+.cheader-box{
+  width: 60%;
+  justify-self: center;
+  text-align: center;
+}
+
+
+.form-title{
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+
+
+.form-title-2{
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+
+
+.sub-tittle{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.438);
+  margin-bottom: 3rem;
+}
+
+.text-date-1{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.438);
+  margin-bottom: 1rem;
+}
+.text-date-2{
+ margin-bottom: 3rem;  
+  font-size: 1.1rem;
+  color:rgba(0, 0, 0, 0.438) ;
+}
+
+.unlisted{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 3rem;
+}
+
+.phone-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 1rem;
+
+}
+
+
+
+.phone-link{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.685);
+  
+}
+
+.link-number{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.521);
+}
+
+.fa-solid {
+  font-size: 1.5rem;
+  color: #9d5248;
+}
+
+.whatsapp-box{
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+
+}
+
+.Whatsapp-link{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.685);
+}
+
+
+.whatsapp-link{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.685);
+  
+}
+
+/* end of form */
+
+
+/* sucribtion */
+
+
+
+.section-10{
+   color: white;
+   padding: 4rem 0 4rem 0;
+   width: 95%;
+   background-color: #9d5248;
+   justify-self: center;
+   margin-bottom: 100px;
+   
+}
+.section-box{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 90%;
+
+
+  justify-self: center;
+}
+.center{
+  justify-self: center;
+}
+.s-box{
+
+  width: auto;
+justify-self: center;
+width: 90%;
+display: flex;
+flex-direction: column;
+gap: 30px;
+
+}
+
+.s-box-t{
+   font-size: 15px;
+}
+
+.s-box-info{
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+}
+
+.s-boxs{
+  width: 50%;
+
+}
+.s-box-ts{
+  font-size: 0.9 rem;
+  margin-bottom:15px;
+  margin-top: 25px;
+ 
+}
+.s-boxs-head{
+  font-size: 1.7rem;
+  margin-bottom:10px;
+
+}
+.s-box-head{
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.email{
+   text-decoration: none;
+   background: none;
+ 
+  border:none;
+   color: white;
+   padding: 5px 30px 20px 1px;
+   font-size: 15px;
+}
+
+
+.email::placeholder{
+  color: white;
+  border-bottom:1px solid white;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+   font-size: 0.8rem;
+   font-style: italic;
+  /* font-family: "'belleza-regular' sans-serif " ; */
+
+
+}
+
+
+
+
+
+
+/* body end */
 
 footer{
 
@@ -161,4 +391,51 @@ footer{
   font-size: 1rem;
   text-decoration: none;
   color:#9d5248
+}
+
+/* form controls */
+.contact-us-form input::placeholder{ color: rgba(0, 0, 0, 0.55); font-family: "Belleza", sans-serif; font-size: 16px; }
+.contact-us-form input:hover::placeholder{ font-size: 14px; }
+
+.form-box{ display: flex; flex-direction: column; gap: 16px; }
+.f-name-input{ display: flex; flex-direction: row; gap: 1rem; }
+.form-box > div{ display: flex; flex-direction: row; gap: 16px; }
+
+.dropdown-field{ position: relative; width: 100%; border-bottom: 1px solid rgba(0, 0, 0, 0.5); margin-bottom: 1rem; }
+.dropdown-select{ outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: none; border: none; padding-top: 10px; padding-bottom: 12px; width: 100%; padding-right: 28px; font-family: "Belleza", sans-serif; font-style: italic; color: rgba(0, 0, 0, 0.55); }
+.dropdown-select option{ font-family: "Belleza", sans-serif; font-style: italic; color: rgba(0, 0, 0, 0.55); }
+.dropdown-arrow{ position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: transparent; border: none; color: #9d5248; font-size: 1rem; cursor: pointer; height: 100%; display: flex; align-items: center; }
+.dropdown-arrow i{ font-size: 0.95rem; }
+.dropdown-field:focus-within{ border-bottom-color: rgba(0,0,0,0.8); }
+
+.contact-us-form input[type="text"],
+.contact-us-form input[type="email"],
+.contact-us-form input[type="number"],
+.contact-us-form textarea{ background: none; border: none; border-bottom: 1px solid rgba(0,0,0,0.5); padding-top: 10px; padding-bottom: 12px; width: 100%; font-size: 1rem; font-family: "Belleza", sans-serif; font-style: italic; color: rgba(0, 0, 0, 0.55); margin-bottom: 1rem; }
+.contact-us-form input:focus{ outline: none; border-bottom-color: rgba(0,0,0,0.8); }
+
+.upload-field{ display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: 100%; position: relative; }
+.upload-input{ background: none; border-left: none; border-right: none; border-top: none; border-bottom: 1px solid #9d5248; padding-top: 10px; padding-bottom: 12px; width: 100%; font-size: 1rem; color: transparent; cursor: pointer; }
+.upload-input::file-selector-button{ display: none; }
+.upload-input::-webkit-file-upload-button{ visibility: hidden; }
+.upload-field::before{ content: "Select folder"; position: absolute; left: 0; top: 10px; color: rgba(0, 0, 0, 0.55); font-family: "Belleza", sans-serif; font-style: italic; font-size: 16px; pointer-events: none; }
+.upload-field:hover::before{ font-size: 14px; }
+.upload-button{ background: #9d5248; color: #fff; border: none; padding: 10px 16px; width: 100%; }
+
+@media (max-width: 992px){
+  .f-name-input{ flex-direction: column; gap: 1rem; }
+  .form-box > div{ flex-direction: column; gap: 1rem; }
+  .contact-us-form input[type="text"],
+  .contact-us-form input[type="email"],
+  .contact-us-form input[type="number"],
+  .contact-us-form textarea{ width: 100%; }
+  .dropdown-field, .upload-field{ width: 100%; }
+}
+
+@media (max-width: 576px){
+  .contact-us-form input[type="text"],
+  .contact-us-form input[type="email"],
+  .contact-us-form input[type="number"],
+  .contact-us-form textarea{ width: 100%; padding-top: 12px; padding-bottom: 14px; }
+  .dropdown-field, .upload-field{ width: 100%; }
 }

@@ -9,6 +9,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
     <!-- GOOGLE FONTS BELLEZA FONT FAMIY -->
+       <!-- GOOGLE FONTS BELLEZA FONT FAMIY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS MARCELLUS FONT FAMIY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Marcellus&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
@@ -44,120 +53,284 @@
 
 
 
+<!-- body -->
 
-
-    <div>
-        <h5>
+    <div class="cheader-box">
+        <h5 class="marcellus-regular head ">
             Contact Us
         </h5>
 
-        <p>
+        <p class="belleza-regular sub-head">
             The Loro Piana team are here to help with any of your queries and questions. You will find multiple ways to
             contact us including our Headquarters and global office addresses as well as contacts for specific business
-            area such as textiles, interiors and luxury goods.
+            area such as textiles, interiors and luxury goods. <br><br><br>  &#166;
         </p>
 
 
     </div>
 
     <section class="contact-us-form">
-        <div>
-            <p>
-                Contact Form
-            </p>
-            <p>
-                Please fill in this form to send us a message. Our Client Service advisors will respond to your query as
+        <div class="contact-us-form-box" >
+
+            <div class="form-box">
+                <p class="form-title belleza-regular">
+                    Contact Form
+                </p>
+            <p class="belleza-regular sub-tittle">
+                Please fill in this form to send us a message. Our Client Service advisors will  <br>respond to your query as
                 soon as possible.
             </p>
 
-            <input type="text" placeholder="Tittle">
-
-            <div>
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
+            <div class="dropdown-field">
+                <select class="dropdown-select title-select">
+                    <option value="" disabled selected>Title</option>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                    <option>Ms</option>
+                    <option>Sir</option>
+                    <option>Ma</option>
+                    <option>Dr</option>
+                    <option>Prof</option>
+                </select>
+                <button type="button" class="dropdown-arrow" onclick="this.previousElementSibling.click()"><i class="fa-solid fa-chevron-down"></i></button>
             </div>
 
-            <input type="email" placeholder="Email" autocomplete="email">
-
-            <div>
-                <input type="text" placeholder="+39 italy" autocomplete="country" class="dropdown">
-                <input type="number" placeholder="Phone Number">
+            <div class="f-name-input">
+                <input type="text" placeholder="First Name*">
+                <input type="text" placeholder="Last Name*">
             </div>
 
-            <input type="text" placeholder="select object" class="dropdown">
-            <input type="text" placeholder="select topic" class="dropdown">
+            <input type="email" placeholder="Email*" autocomplete="email" class="email-input">
+
+            <div>
+                <div class="dropdown-field">
+                    <select class="dropdown-select country-select">
+                        <option value="" disabled selected>Country/Code</option>
+                        <option>+39 Italy</option>
+                        <option>+44 United Kingdom</option>
+                        <option>+1 United States</option>
+                        <option>+234 Nigeria</option>
+                        <option>+33 France</option>
+                        <option>+49 Germany</option>
+                        <option>+81 Japan</option>
+                    </select>
+                    <button type="button" class="dropdown-arrow" onclick="this.previousElementSibling.click()"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <input type="number" placeholder="Phone Number*">
+            </div>
+
+            <div class="dropdown-field">
+                <select class="dropdown-select object-select">
+                    <option value="" disabled selected>Select Object</option>
+                    <option>Product Inquiry</option>
+                    <option>Order Status</option>
+                    <option>Returns & Exchanges</option>
+                    <option>Store Information</option>
+                    <option>Textiles & Interiors</option>
+                    <option>Corporate</option>
+                    <option>Other</option>
+                </select>
+                <button type="button" class="dropdown-arrow" onclick="this.previousElementSibling.click()"><i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+            <div class="dropdown-field">
+                <select class="dropdown-select topic-select">
+                    <option value="" disabled selected>Select Topic</option>
+                    <option>Payment</option>
+                    <option>Shipping</option>
+                    <option>Sizing</option>
+                    <option>Materials</option>
+                    <option>Customization</option>
+                    <option>Warranty</option>
+                    <option>Other</option>
+                </select>
+                <button type="button" class="dropdown-arrow" onclick="this.previousElementSibling.click()"><i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+
+            
             <input type="text" placeholder="Message*">
+            <div class=" uploads">
+                <div class="upload-field">
+                    <input type="file" class="upload-input" placeholder="Upload files">
+                    <br>
+                    <p class="belleza-regular" style="color: rgba(0, 0, 0, 0.438); font-size: 0.8rem;">
+                        I acknowledge that my data will be processed by Loro Piana S.p.A. in accordance with the provisions of the <br> Privacy Policy.
+                    </p> 
+                    <button type="button" class="upload-button belleza-regular" style="padding: 20px 40px; font-size: 1rem;">Submit</button>
+                </div>
+            </div>
 
         </div>
 
 
         <div>
-            <p>
+            <p  class="form-title-2 belleza-regular">
                 Other Contact
             </p>
-            <p>
-                Monday to Friday 9am to 8pm CET (excluding public holidays)
+            <p class="belleza-regular text-date-1">
+                Monday to Friday 9am to 8pm CET (excluding public <br> holidays)
             </p>
-            <p>
-                Saturday and Sunday 10am to 7pm CET (excluding public holidays)
+            <p class="belleza-regular text-date-2">
+                Saturday and Sunday 10am to 7pm CET (excluding public <br> holidays)
             </p>
-
-            <ul>
+            
+            <ul class="unlisted belleza-regular">
                 <li>
-                    • New Year’s day: 1st January
+                     New Year’s day: 1st January
                 </li>
                 <li>
-                    • Epiphany: 6th January
+                    Epiphany: 6th January
                 </li>
+                <li>
+                 Easter Monday: 21th April
+                </li>
+                <li>
+                   Liberation Day: 25th April
+              </li>
                  <li>
-                  • Easter Monday: 21th April
-                </li>
-                 <li>
-              • Liberation Day: 25th April
-                </li>
-                 <li>
-                    • Labour Day: 1st May
-                </li>
-                 <li>
-                   • Republic Day: 2nd June
+                     Labour Day: 1st May
                 </li>
                 <li>
-                    • Assumption Day: 15th August
+                 Republic Day: 2nd June
                 </li>
                 <li>
-                    • All Saints’ Day: 1st November
+                     Assumption Day: 15th August
                 </li>
                 <li>
-                    • Immaculate Conception: 8th December
+                     All Saints’ Day: 1st November
+                </li>
+                <li>
+                     Immaculate Conception: 8th December
                 </li>
                 
             </ul>
+            
+            <div class="phone-box belleza-regular">
+                <a href="tel:+2348083809406" class="phone-link" target="_blank">
+                    Phone <br><br> <p class="belleza-regular link-number" style="color: rgba(0, 0, 0, 0.438);">
 
-            <div>
-                <a href="tel:+2348083809406">
-                    Phone <br><br>
-                    +2348083809406
+                        +2348083809406
+                    </p>
                 </a>
-
-                <i class="fa-solid fa-phone"></i>
-
-
-            </div>
-
-              <div>
-
-                <a href="3" target="_blank">
-                    chat with us <br><br>
-                    Whatsapp 
-                </a>
-
-             <i class="fa-solid fa-message"></i>
                 
+                <i class="fa-solid fa-phone"></i>
+                
+                
+            </div>
+            
+            <div class="whatsapp-box belleza-regular">
+                
+                <a href="3" target="_blank" class="Whatsapp-link">
+                    chat with us <br> <br>
+                    <p class="belleza-regular link-number" style="color: rgba(0, 0, 0, 0.438);">
 
+                        Whatsapp 
+                    </p>
+                </a>
+                
+                <i class="fa-solid fa-message"></i>
+                
+                
             </div>
         </div>
+    </div>
     </section>
-    <!-- 
+
+     <section class="section-10">
+
+                <div class="section-box">
+
+                    <div class="s-boxs">
+                        <p class="belleza-regular s-boxs-head">
+                            Subscribe to our newsletter
+                        </p>
+                        <p class="marcellus-regular s-box-ts">
+                            Receive our newsletter and discover our world, collections, <br> and latest news from us.
+                        </p>
+                        <input type="email" placeholder="Your Email Address" autocomplete="email" class="email"
+                            type="submit">
+
+                        <p class="marcellus-regular s-box-ts">
+                            I acknowledge that my email address will be processed by Loro Piana S.p.A. in accordance
+                            with the
+                            provisions of the Privacy Policy.
+                        </p class="marcellus-regular s-box-t">
+
+                    </div>
+                    <div class="s-box-info">
+
+                        <div class="s-box">
+                            <p class="belleza-regular s-box-head">
+                                Get In Touch
+                            </p>
+                            <p class="marcellus-regular s-box-t">
+                                Contact
+                            </p class="marcellus-regular s-box-t">
+                            <p>
+                                FAQ
+                            </p>
+                        </div>
+
+                        <div class="s-box">
+                            <p class="belleza-regular s-box-head">
+                                Company
+                            </p>
+                            <p class="marcellus-regular s-box-t">
+                                Lorem, ipsum dolor.
+                            </p>
+
+                            <p class="marcellus-regular s-box-t">
+                                Carrer
+                            </p>
+
+                            <p class="marcellus-regular s-box-t">
+                                Lorem, ipsum dolor.
+                            </p>
+
+                            <p class="marcellus-regular s-box-t">
+                                Lorem, ipsum dolor.
+                            </p>
+                        </div>
+
+                        <div class="s-box">
+                            <p class="belleza-regular s-box-head">
+                                Services
+                            </p>
+                            <p class="marcellus-regular s-box-t">
+                                All services
+                            </p>
+
+                            <p class="marcellus-regular s-box-t">
+                                Return & Exchange
+                            </p>
+
+                            <p class="marcellus-regular s-box-t">
+                                Delivery & and shipping
+                            </p>
+
+                        </div>
+
+                        <div class="s-box">
+                            <p class="belleza-regular s-box-head">
+                                Legal & Cookies
+                            </p>
+                            <p class="marcellus-regular s-box-t">
+                                compliances
+                            </p>
+                            <p class="marcellus-regular s-box-t">
+                                Legal
+                            </p>
+                            <p class="marcellus-regular s-box-t">
+                                privacy & Cookies notice
+                            </p>
+                            <p class="marcellus-regular s-box-t">
+                                Accessability
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    
         <footer>
             <div class="footer-1 belleza-regular">
                 <a href="#" class="footer-1-link">
@@ -178,7 +351,7 @@
                 <a href="" class="footer-3-link belleza-regular">WeChat</a>
                 <a href="" class="footer-3-link belleza-regular">Weibo</a>
             </div>
-        </footer> -->
+        </footer>
 </body>
 
 </html>
