@@ -9,7 +9,8 @@
   .nav2 { flex-wrap: wrap; justify-content: center; gap: 1rem; }
   .cheader-box { width: 90%; }
   .contact-us-form { flex-direction: column; align-items: center; gap: 24px; }
-  .form-box { width: 95%; }
+  .contact-us-form-box { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+  .form-box, .form-title-box { width: 95%; }
   .f-name-input { flex-direction: column; gap: 1rem; }
   .form-box > div { flex-direction: column; gap: 1rem; }
   .dropdown-field, .upload-field { width: 100%; }
@@ -31,6 +32,8 @@
   .cheader-box { width: 95%; }
   .sub-head { width: 95%; line-height: 1.4rem; }
   .contact-us-form { gap: 16px; }
+  .contact-us-form-box { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .form-box, .form-title-box { width: 96%; }
   .upload-hint { font-size: 0.55rem; }
   .privacy-msg { font-size: 0.8rem; }
 }
